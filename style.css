@@ -19,18 +19,25 @@
     height: 91px;
 }
 
-.nav{
+ul{
     display: flex;
-    width: calc(1280px-300px);
-    justify-self: flex-end;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    height: 91px;
-    color: black;
-    
+    visibility: visible;
+    position: absolute; 
+    right:40px; 
+    padding: 24px 24px;
 }
 .nav>li{
-    font-size: 18px;
+    font-size: 25px;
     margin-left: 50px;
+    right:15px
     
+    
+}
+.menu{
+    display: flex;
+    visibility: visible;
+    position: absolute; 
+    left:40px; 
+    padding: 24px 24px;
+
 }
