@@ -12,23 +12,29 @@
     height: 100%;
 }
 .hearder{
-    width: 100%;
-    padding: 20px;
-    height: 91px;
+    display: inline-block;
+    width: auto;
+    height:auto;
+    
 }
 
-ul{
+
+
+.nav>li{
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 50px;
+
+    
+    
+}
+.logo{
     display: flex;
     visibility: visible;
     position: absolute; 
-    right:40px; 
-    padding: 24px 24px;
-}
-.nav>li{
-    font-size: 25px;
-    margin-left: 50px;
-    right:15px
-    
+    width: 314px;
+    height: 43px;
+    float:  center;
     
 }
 .menu{
@@ -36,8 +42,8 @@ ul{
     visibility: visible;
     position: absolute; 
     left:40px; 
-    padding: 24px 24px;
-
+    margin-left: 24px;
+    margin-top: 24px;
 }
 
 .text_table{
@@ -54,3 +60,4 @@ ul{
     padding-right: 20px;
     float: right;
 }
+
