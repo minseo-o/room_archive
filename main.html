@@ -16,11 +16,21 @@
         <div class="intro_bg">
             <div class="header">
                 <div class="menu">
-                    <a href="#"><img src="images/menu.png" style="width: 20px; height: 20px;"></a>
+                    <button id="show"><img src="images/menu.png" style="width: 20px;height: 20px;" ></button>
+                      <div class="background">
+                        <div class="window">
+                          <div class="popup">
+                            <button id="close">팝업닫기</button>
+                          </div>
+                          <div>
+                            <div></div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
 
                 <div class="logo">
-                    <a href="#"><img src="images/logo.png" style="width: 318px; height: 43px;"></a>
+                    <a href="main.html"><img src="images/logo.png" style="width: 318px; height: 43px;"></a>
                 </div>
 
                 <ul class="nav" >
@@ -73,6 +83,20 @@
             <li><a href="#">Privac Policy</a></li>
         </ul>
     </div>
+        <script>
+            function show() {
+              document.querySelector(".background").className = "background show";
+            }
+      
+            function close() {
+              document.querySelector(".background").className = "background";
+            }
+      
+            document.querySelector("#show").addEventListener("click", show);
+            document.querySelector("#close").addEventListener("click", close);
+          </script>
 </body>
 
 </html>
+
+    
