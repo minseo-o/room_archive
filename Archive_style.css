@@ -19,14 +19,10 @@
 /* mobile */
 @media screen and (max-width:540px) {}
 
-/*맨 처음 페이지 */
-.intro_bg {
-    background-image: url(images/bg.svg);
-    width: auto;
-    height: 1092px;
-}
+
 
 .header {
+    background-color: white;
     display: flex;
     justify-content: center;
     padding-left: 34px;
@@ -152,69 +148,29 @@
 .ALL{
     padding-top: 20px;
 }
-
-/*두번째*/
-.intro {
-    margin-top: 5%;
-    margin-bottom: 15%;
-    margin-left: 35px;
-    margin-right: 35px;
-}
-
-.text_table {
+.txt{
+    position: relative;
     font-size: 14px;
     display: flex;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right:200px;
 }
-
-.korean {
-    font-size: 14px;
-    margin-bottom: 10px;
+.left{
+    width: 480px;
+    padding-right: 30px;
 }
-
-.intro_img {
-    padding-left: 45px;
-
+.center{
+    width: 480px;
+    float: center;
+}
+.right{
+    width: 480px;
     float: right;
 }
-
-/*정보들 있는 페이지 */
-.infor {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 5%;
+.room{
+    margin-bottom: 20px;
 }
-
-.line {
-    border-top-width: 1px;
-    border-color: #1a1a1a;
+.archive{
+    margin-bottom: 20px;
 }
-
-.infor_nav {
-    font-size: 14px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.title {
-    margin-bottom: 30px;
-}
-
-.line2 {
-    margin-bottom: 5%;
-    border-top-width: 1px;
-    border-color: #1a1a1a;
-}
-
-.use_nav {
-
-    display: flex;
-    text-align: right;
-    display: flex;
-    justify-content: left;
-}
-
-.use_nav>li {
-    font-size: 17px;
-    margin-right: 30px;
-}
-
