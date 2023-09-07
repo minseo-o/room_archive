@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 
 <body>
@@ -16,56 +17,102 @@
         <div class="intro_bg">
             <div class="header">
                 <div class="menu">
-                    <button id="show"><img src="images/menu.png" style="width: 20px;height: 20px;" ></button>
-                      <div class="background">
-                        <div class="window">
-                          <div class="popup">
-                            <button id="close">팝업닫기</button>
-                          </div>
-                          <div>
-                            <div></div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+                    <button onclick="toggleSidebar()" class="menubar"><img src="images/menu.png"
+                            style="width: 20px;height: 20px;"></button>
+                    <!-- 모달 배경 -->
+                    <div id="myModal" class="modal-bg">
+                        <!-- 사이드 메뉴바 -->
+                        <div id="mySidebar" class="sidebar">
+                            <div class="close-button">
+                                <a href="javascript:void(0);" onclick="toggleSidebar()"><img src="images/exit.png"
+                                        style="width: 16px;height: 16px;"></a>
+                            </div>
+                            <div class="minilogo">
+                                <a href="main.html"><img src="images/logo.png" style="width: 234px; height: 32px;"></a>
+                            </div>
+                            <ul class="menul">
+                                <li>
+                                    <a>
+                                        <span class="shop">shop</span>
+                                        <p><span id="toggleNav" ><img src="images/tiggle.png" style="width: 13px; height: 12px;"></span></p>
+                                        
+                                    </a>
+                                    <div class="navbar" >
+                                        <ul>
+                                            <li><a href="#">ALL</a></li>
+                                            <li><a href="#">UNIQUE</a></li>
+                                            <li><a href="#">PLANT LIFE</a></li>
+                                            <li><a href="#">BIRD SERIES</a></li>
+                                            <li><a href="#">BODY SERIES</a></li>
+                                            <li><a href="#">WELL LINE</a></li>
+                                            <li><a href="#">BAG</a></li>
+                                            <li><a href="#">ETC</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
 
+
+                                <li><a href="#">Archive</a></li>
+                                <li><a href="#">info.</a></li>
+                                <li><a href="#">QnA</a></li>
+                            </ul>
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
                 <div class="logo">
                     <a href="main.html"><img src="images/logo.png" style="width: 318px; height: 43px;"></a>
                 </div>
 
-                <ul class="nav" >
+                <ul class="nav">
                     <li><a href="#">Cart</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Join</a></li>
-                    <li><a href="#"><img src="images/global.png" style="width: 20px; height: 20px; padding-top: 3px;"></a></li>
+                    <li><a href="#"><img src="images/global.png"
+                                style="width: 20px; height: 20px; padding-top: 3px;"></a></li>
                 </ul>
+
             </div>
+
         </div>
     </div>
-    
+
     <div class="intro">
         <div class="text_table">
             <div class="txt">
                 <div class="korean">
-                    롬 아카이브는 부드러우면서 강인한 자연물에서 영감을 받아 전부 수작업으로 도자를 빚어냅니다. 프로젝트별로 다루는 대상이 달라지며, 그것은 꽃이 되거나 열매, 또는 자연물의 구성원인 인간이 되면서
-                    도자의 모습으로 기록되어 우리 곁에서 머물 것입니다. 건드리면 끊어질 듯 연약한 모습으로 자연에 순응하며 수만 년을 이어온 생명력의 힘, 있는 그대로 살아가는 것을 가치 있게 여기고 이를
-                    담아내려 합니다. 말라 있는 백색부터 여러가지의 빛과, 그로부터 발생되는 색으로 각기 다른 특유의 분위기를 냅니다.
+                    <b>롬 아카이브는 부드러우면서 강인한 자연물에서 영감을 받아 전부 수작업으로 도자를 빚어냅니다. 프로젝트별로 다루는 대상이 달라지며, 그것은 꽃이 되거나 열매, 또는 자연물의
+                        구성원인
+                        인간이 되면서
+                        도자의 모습으로 기록되어 우리 곁에서 머물 것입니다. 건드리면 끊어질 듯 연약한 모습으로 자연에 순응하며 수만 년을 이어온 생명력의 힘, 있는 그대로 살아가는 것을 가치
+                        있게
+                        여기고 이를
+                        담아내려 합니다. 말라 있는 백색부터 여러가지의 빛과, 그로부터 발생되는 색으로 각기 다른 특유의 분위기를 냅니다.</b>
                 </div>
-                
+
                 <div class="English">
-                    Loam Archive's handmade ceramics are inspired by delicate yet natural and resilient forms. Each project has
-                    its own individual process, through which flowers, fruits, or human beings may emerge and continue live
-                    through its ceramic form. The fragility of nature and its acceptance of its own vulnerability is what gives
-                    it power, as it exists harmoniously with its surroundings. Loam Archive strives to capture this unique life
-                    force through different aesthetic effects generated by the combination of faded white and various hues. 
+                    Loam Archive's handmade ceramics are inspired by delicate yet natural and resilient forms. Each
+                    project has
+                    its own individual process, through which flowers, fruits, or human beings may emerge and continue
+                    live
+                    through its ceramic form. The fragility of nature and its acceptance of its own vulnerability is
+                    what gives
+                    it power, as it exists harmoniously with its surroundings. Loam Archive strives to capture this
+                    unique life
+                    force through different aesthetic effects generated by the combination of faded white and various
+                    hues.
                 </div>
-            </div>  
+            </div>
             <div class="intro_img">
                 <img src="images/intro.jpg" style="width: 840px;height: 1050px;">
             </div>
         </div>
     </div>
-    
+
 
     <div class="infor">
         <hr class="line">
@@ -78,25 +125,7 @@
             <li>Bank Info: 신한 110 524 7479174 이지혜(롬아카이브)</li>
         </ul>
         <hr class="line2">
-        <ul class="use_nav">
-            <li><a href="#">Terms of use</a></li>
-            <li><a href="#">Privac Policy</a></li>
-        </ul>
-    </div>
-        <script>
-            function show() {
-              document.querySelector(".background").className = "background show";
-            }
-      
-            function close() {
-              document.querySelector(".background").className = "background";
-            }
-      
-            document.querySelector("#show").addEventListener("click", show);
-            document.querySelector("#close").addEventListener("click", close);
-          </script>
+        <script src="btn.js"></script>
 </body>
 
 </html>
-
-    
