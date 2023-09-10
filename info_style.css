@@ -43,7 +43,7 @@
 }
 
 .logo {
-    margin-left: 5%;
+    margin-left: 13%;
     justify-content: center;
 }
 /*메뉴바 */
@@ -148,13 +148,17 @@
 .ALL{
     padding-top: 20px;
 }
-.hd{
-    margin-left: 250px;
-    margin-right: 250px;
+
+.table{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    
 }
 .left{
-    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
-.right{
-    float: right;
-}
+
+
